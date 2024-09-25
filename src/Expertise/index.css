@@ -1,0 +1,54 @@
+.expertise {
+    padding-left: 100px;
+    font-family: 'Dancing Script', cursive; /* Your chosen font */
+    height: 100vh;
+    border-radius: 18px 18px 18px 18px;
+   
+  }
+  
+  h1 {
+    font-size: calc(32px + 2vmin);
+    color: rgb(220, 221, 228);
+    text-align: left;
+    margin: 0; /* Remove default margin */
+    padding-top: 20px; /* Add some padding if desired */
+    margin-bottom: 15px;
+}
+  
+  .expertise-container {
+    display: flex;
+    justify-content: center; /* Center the columns */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  }
+  
+  .column {
+    flex: 5;
+    margin: 10px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+  
+  h2 {
+    font-size: calc(24px + 1vmin);
+    color: rgb(179, 194, 124);
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    margin-bottom: 0px;
+  }
+  
+  ul li {
+    font-size: calc(16px + 1vmin);
+    color: #f8f4f4; /* Adjust color for readability */
+  }
+  
+  img {
+    width: 200px; /* Make images responsive */
+    height: 200; /* Maintain aspect ratio */
+    border-radius: 8px;
+  }
+  

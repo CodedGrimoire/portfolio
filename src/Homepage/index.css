@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
 .App {
     text-align: left; /* Aligns text to the left */
     height: 100vh; /* Ensure the app takes full viewport height */
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Sets the font to Helvetica Neue with fallbacks */
-    border-radius: 18px 18px 18px 18px; /* Round the right side of the sidebar */
-    
-  
-  .App-header {
+     /* Sets the font to Helvetica Neue with fallbacks */
+     border-radius: 18px 18px 18px 18px; /* Round the right side of the sidebar */
+}
+
+.App-header {
     background-size: cover; /* Make sure the background image covers the whole page */
     background-position: center; /* Centers the background image */
     min-height: 100vh; /* Ensure the header takes full viewport height */
@@ -14,27 +16,26 @@
     justify-content: center; /* Vertically centers the content */
     padding-left: 20px; /* Adds some padding to the left */
     color: rgb(82, 86, 161);
-   
-  }
-  
-  p {
-    font-size: calc(10px + 2vmin); /* Responsive font size */
+}
+
+
+
+p {
+    font-size: calc(10px + 5vmin); /* Responsive font size */
     color: #d0e16df8; /* Change this to whatever color you want */
     padding-top: 5px; 
-  padding-bottom: 300px; 
-  padding-left: 250px; 
-  padding-right: 500px;
-  text-align: justify;
-  
-  
-  }
-  h1{
+    padding-bottom: 300px; 
+    padding-left: 350px; 
+    padding-right: 500px;
+    text-align: justify;
+    font-family: 'Dancing Script', cursive;
+}
+
+h1 {
     font-size: calc(20px + 2vmin); /* Responsive font size */
     color: rgba(208, 225, 109, 0.973); /* Change this to whatever color you want */
     padding-top: 100px; 
     text-align: left;
-  
-  padding-left: 250px; 
-  }
-  }
-  
+    padding-left: 350px;
+    font-family: 'Dancing Script', cursive;
+}

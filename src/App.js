@@ -1,22 +1,45 @@
-
-import './App.css';
-import background from './background.jpg'; // Import the background image
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import Sidebar from './Sidebar/index.js'; // Import the Sidebar component
+import React, { useState, useEffect } from 'react';
+import './App.css'; // Your main styles
+import background from './background.gif';
+import Sidebar from './Sidebar/index.js';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Biography from './Biography';
+import Expertise from './Expertise';
+import Projects from './Projects';
+import Contact from './Contact';
+import Homepage from './Homepage';
+import Loader from './Loader'; // Import your Loader component
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false); // Simulate loading
+    }, 1); // Adjust as needed
+    return () => clearTimeout(timer); // Cleanup
+  }, []);
+
   return (
-    <div className="App">
-      <Sidebar /> {/* Add the Sidebar component */}
-      <div className="content">
-        <header className="App-header" style={{ backgroundImage: `url(${background})` }}>
-          <h1>Hello!</h1>
-          <p>
-            I’m Tazkia Malik, a Computer Science and Engineering student specializing in software development and engineering. I excel in crafting innovative solutions and building scalable applications, supported by a strong foundation in coding and problem-solving. My expertise extends to web development and AI model training, driven by a commitment to excellence and continuous learning. Browse my portfolio to see how I transform concepts into impactful software.
-          </p>
-        </header>
+    <Router>
+      <div className="App" style={{ backgroundImage: `url(${background})` }}>
+        <Sidebar />
+        <div className="content">
+          {loading ? (
+            <Loader /> // Show loader while loading
+          ) : (
+            <Routes>
+              <Route path="/homepage" element={<Homepage />} />
+              <Route path="/biography" element={<Biography />} />
+              <Route path="/expertise" element={<Expertise />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/" element={<Homepage />} />
+            </Routes>
+          )}
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

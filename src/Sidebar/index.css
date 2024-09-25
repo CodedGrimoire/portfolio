@@ -1,48 +1,78 @@
-/* src/index.css */
 .sidebar {
-    width: 75px;
-    background-color: #e5e7df;
-    color: #180303;
-    padding: 20px;
-    height: 100vh; /* Full viewport height */
-    position: fixed; /* Fixes the sidebar to the left */
-    left: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to the sidebar */
-  }
+  font-family: 'Times New Roman', Times, serif; /* Add font family here */
+  width: 85px;
+  background-color: #3b1552;
+  color: #180303;
+  height: 100vh; /* Full viewport height */
+  position: fixed; /* Fixes the sidebar to the left */
   
-  .logo {
-    width: 75px; /* Adjust the size as needed */
-    height: auto;
-    margin-bottom: 20px; /* Space below the logo */
-  }
+  display: flex;
+  flex-direction: column;
   
-  .sidebar h2 {
-    margin-bottom: 20px;
-    font-size: 16px; /* Adjust the font size as needed */
-  }
+  box-shadow: 2px 0 8px rgba(238, 201, 201, 0.1); /* Adds shadow to the sidebar */
+  padding-top: 80px;
+  border-radius: 0 15px 15px 0; /* Round the right side of the sidebar */
   
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    width: 100%; /* Make the list items span the full width of the sidebar */
-  }
-  
-  .sidebar ul li {
-    margin: 10px 0;
-  }
-  
-  .sidebar ul li a {
-    color: #0e0808;
-    text-decoration: none;
-    display: block;
-    text-align: center; /* Center the text */
-  }
-  
-  .sidebar ul li a:hover {
-    text-decoration: underline;
-  }
-  
+}
+
+.logo {
+  width: 100%; /* Make logo take the full width of the sidebar */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 0 20px 0; /* Remove top margin, keep bottom margin */
+  display: flex;
+  justify-content: center; /* Ensure logo is centered horizontally */
+  align-items: center; /* Ensure logo is centered vertically */
+}
+
+.logo img {
+  width: 100%; /* Ensure the image takes up the full width of the container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.sidebar h2 {
+  margin-top: 0; /* Remove margin to position it directly below the logo */
+  margin-bottom: 30px; /* Keep the margin below the h2 for spacing with the list */
+  font-size: 16px; /* Reduced font size to fit */
+  text-align: center; /* Center the heading */
+  word-break: break-word; /* Ensure text wraps for small width */
+  color: #0f0303; /* Change text color to enhance glow */
+  text-shadow: 0 0 5px #d3d3d3, 0 0 10px #d3d3d3, 0 0 15px #a9a9a9, 0 0 20px #a9a9a9; /* Light grey glowing effect */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Make the list items span the full width of the sidebar */
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* Add space between list items */
+  padding: 4px 5px;
+  align-items: center;
+  font-family: 'Times New Roman';
+}
+
+.sidebar ul li {
+  text-align: center; /* Keep the text centered */
+  padding: 4px 5px;
+  font-family: 'Times New Roman';
+}
+
+.sidebar ul li a {
+  color: #0e0808;
+  text-decoration: none;
+  display: block;
+  font-size: 15.5px; /* Adjust font size to fit better */
+  padding: 6px; /* Add padding for better touch targets */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover */
+  text-shadow: 0 0 8px #d3d3d3, 0 0 10px #d3d3d3; /* Light grey glowing effect for links */
+  padding: 2px 5px;
+  font-family: 'Times New Roman';
+}
+
+.sidebar ul li a:hover {
+  background-color: #d3d5cc; /* Change background color on hover */
+  text-shadow: 0 0 10px #d3d3d3, 0 0 15px #a9a9a9, 0 0 20px #a9a9a9; /* Stronger light grey glow on hover */
+  text-decoration: none;
+}

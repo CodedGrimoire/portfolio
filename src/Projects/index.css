@@ -1,0 +1,70 @@
+/* Projects page styling */
+
+.projects-container {
+    background-color: #23075b; /* Fallback color */
+    background-image: url('https://i.gifer.com/J4o.gif');
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center; /* Center the image */
+    color: #fff; /* White text for contrast */
+    margin-left: 85px;
+    display: flex;
+    flex-direction: column; /* Changed to column to stack title and slider */
+     /* Center content horizontally */
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    border-radius: 18px; /* Rounded corners */
+    padding: 20px; /* Add some padding */
+}
+  
+  .projects-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Light glow effect on text */
+  }
+  
+  .slider {
+    padding-top: 20px;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  
+  .slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .prev, .next {
+    background-color: rgba(7, 38, 100, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+  }
+  

@@ -1,0 +1,59 @@
+.Contact {
+    padding-left: 95px; /* Add padding to the container */
+    font-family: 'Dancing Script', cursive; /* Use the previously imported font */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Use flexbox to manage layout */
+    flex-direction: column; /* Arrange children vertically */
+    border-radius: 18px 18px 18px 18px;
+}
+
+h1 {
+    font-size: calc(24px + 2vmin); /* Responsive font size */
+    color: rgb(220, 221, 228); /* Adjust color as needed */
+    text-align: left; /* Align the heading to the left */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+h2 {
+    font-size: calc(24px + 2vmin); /* Responsive font size */
+    color: rgb(179, 194, 124); /* Adjust color as needed */
+    text-align: left; /* Align the heading to the left */
+    margin-bottom: 10px; /* Reduced space below the heading */
+}
+
+.contact-container {
+    display: flex; /* Use flex to layout map and contact info side by side */
+    align-items: flex-start; /* Align items to the start */
+    flex-grow: 1; /* Allow container to grow and fill space */
+    margin-top: 5px; /* Reduced space above the container */
+}
+
+.map-container {
+    flex: 1; /* Allow the map to take available space */
+    margin-right: 20px; /* Add space between map and contact info */
+    min-width: 300px; /* Ensure map has a minimum width */
+}
+
+.contact-info {
+    flex: 0 0 200px; /* Fixed width for contact info */
+    text-align: left; /* Align text to the left */
+}
+
+.contact-info h2 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.contact-info p {
+    font-size: calc(14px + 1vmin); /* Responsive font size */
+    color: #f8f4f4; /* Adjust color for readability */
+    margin: 2px 0; /* Reduced margin between paragraphs */
+}
+
+.contact-info a {
+    color: rgb(141, 142, 158); /* Adjust link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
